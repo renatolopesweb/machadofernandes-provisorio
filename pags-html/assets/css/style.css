@@ -1,0 +1,459 @@
+
+/* html, body{
+    background: #333!important;
+} */
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Tiro+Telugu&display=swap');
+
+
+h1, h2, h3, h4, h5{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Tiro Telugu', serif;
+    letter-spacing: 1px;
+}
+
+.mobile-show{
+    display: none!important;
+}
+@media (max-width: 992px){
+    .desktop-show{
+        display: none;
+    }
+    .mobile-hide{
+        display: none;
+    }
+    .mobile-show{
+        display: block!important;
+    }
+}
+
+:root {
+    --color-link: #0288D1;
+    --white: #ffffff;
+}
+
+/* CLASS */
+.divider{opacity: 0.1;}
+div{transition: 0.3s;}
+.color-lina{color: var(--color-link);}
+.preload{width:100%;height:100vh;display:grid;align-content:center;align-items:center;opacity:.5;position:absolute;z-index:1;text-align:center;transition:.3s}.preload-content{max-width:90%;margin:auto}
+/* CLASS */
+.navbar{
+    background-color: #090909;
+}
+.nav a{
+    color: #090909!important;
+}
+.nav a:hover{
+    text-decoration: none!important;
+}
+.nav i{
+    color: #fff;
+    font-size: 1.5rem;
+}
+.nav-mobile-hamb{
+    position: absolute;
+    left: 10px;
+}
+.social i{
+    color: inherit;
+    margin-right: 5px;
+}
+/* CLASS */
+.home-link-space{
+    color: var(--color-link);
+    margin-top: 50px;
+}
+@media (max-width: 992px){
+    .home-link-space{
+        margin-top: auto;
+        margin-bottom: 50px;
+    }
+}
+
+
+/* CLASS */
+
+.container a, .container-fluid a, .contact a{
+    color: var(--color-link);
+    text-decoration: none;
+}
+
+.container a:hover, .container-fluid a:hover, .contact a:hover{
+    text-decoration: underline;
+}
+
+.home-lead-space{
+    align-content: center;
+    background-color: #010101;
+    background-image: url(../images/bg-machado-fernandes.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    display: grid;
+    height: 100vh;
+    position: relative;
+    text-align: center;
+}
+.home-lead-space h1{
+    font-size: 2.2rem;
+}
+.home-lead-space p{
+    font-size: 1.4rem;
+    margin-top: 15px;
+}
+.home-lead-space article{
+    animation-name: hello;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    margin-top: 74.5px;
+    opacity: 0;
+    transform: translateY(15px);
+}
+@media (max-width: 992px){
+    .home-lead-space{
+        background-attachment: scroll;
+        padding: 0 10px;
+    }
+    .home-lead-space article{
+        margin-top: auto;
+    }
+    .home-lead-space h1{
+        font-size: 1.9rem;
+        padding: 0 10px;
+        text-align: center;
+    }
+    .home-lead-space p{
+        font-size: 1rem;
+    }
+}
+
+@keyframes hello {
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.home-area-atuacao{
+    align-content: start;
+    display: grid;
+    height: 100vh;
+}
+@media (max-width: 992px){
+    .home-area-atuacao{
+        height: auto;
+    }   
+}
+.home-area-atuacao h3{
+    margin-bottom: 20px;
+}
+.home-advogados{
+    background-color: #010101;
+    position: relative;
+}
+.home-advogados::before, .home-advogados::after{
+    content: '';
+    width: 100%;
+    height: 100px;
+    position: absolute;
+}
+.home-advogados::before{
+    background-image: linear-gradient(#fff, #e4e4e4);
+    top: -100px;
+}
+.home-advogados::after{
+    background-image: linear-gradient(#e4e4e4, #fff);
+    bottom: -100px;
+}
+.home-context{
+    display: grid;
+    align-content: center;
+    height: 100vh;
+}
+.home-context ul{
+    padding: 0;
+}
+.home-context li{
+    margin-top: 30px;
+    list-style-position: inside;
+    list-style-image: url(../images/home-check.svg);
+}
+.home-blog{
+    transition: 0.5s;
+}
+
+.home-blog .card:hover{
+    margin-top: -20px;
+}
+.home-blog .card:active{
+    margin-top: 20px;
+}
+.home-blog a{
+    color: inherit;
+}
+
+.home-context-2{
+    align-content: center;
+    display: grid;
+    height: 50vh;
+    background-color: #FBFBFB;
+}
+
+footer{
+    align-items: center;
+    background-image: url(../images/bg-machado-fernandes.jpg);
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    height: 40vh;
+    font-size: 0.8rem;
+    grid-template-columns: 450px auto auto auto;
+}
+footer div{
+    text-align: center;
+}
+footer i{
+    font-size: 4rem;
+}
+footer p{
+    margin: 0;
+}
+footer, footer a, .credits, .credits a{
+    color: #777;
+}
+footer div:nth-child(1){
+    align-content: center;
+    background-color: rgba(0,0,0,0.7);
+    display: grid;
+    justify-content: center;
+    margin: auto;
+    height: 40vh;
+    padding: 0 50px;
+}
+footer div:nth-child(1) img{
+    margin: auto;
+}
+@media (max-width: 992px){
+    footer{
+        grid-template-columns: 1fr;
+    }
+    footer div:nth-child(1) img{
+        width: 80%;
+    }
+}
+.credits{
+    align-items: center;
+    background-color: #010101;
+    display: flex;
+    font-size: 0.8rem;
+    height: 50px;
+    padding: 0 20px;
+    text-align: center;
+}
+.credits a{
+    margin-left: 3px;
+}
+@media (max-width: 992px){
+    .credits{
+        flex-direction: column;
+        height: 120px;
+        margin-bottom: 50px;
+        padding: 20px;
+        text-align: center;
+    }
+}
+
+.chatt{
+    align-content: center;
+    border-radius: 100px 0 0;
+    bottom: 0px;
+    display: grid;
+    height: 80px;
+    justify-content: center;
+    position: fixed;
+    right: 0px;
+    width: 80px;
+    z-index: 2;
+}
+.chatt:hover{
+    opacity: 0.9;
+}
+@media (max-width: 992px){
+    .chatt{
+        display: none;
+    }
+}
+.chatt i{
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.4rem;
+    margin: 20px 0 0 10px;
+}
+.chatt i:active{
+    opacity: 0.8;
+}
+.chatt-content{
+    background-color: #fff;
+    bottom: 0px;
+    box-shadow: 11px 9px 15px 5px #333;
+    border-radius: 20px 0 0 0;
+    height: calc(100vh - 120px);
+    opacity: 0;
+    position: relative;
+    position: fixed;
+    right: 0;
+    transform: translateY(100vh);
+    width: 350px;
+    z-index: 1;
+}
+@media (max-width: 992px){
+    .chatt-content{
+        border-radius: 0px;
+        height: calc(100vh - 80px);
+        width: 100%;
+    }
+}
+.chatt-content a:nth-child(1){
+    color: #fff;
+    text-decoration: none;
+}
+
+.chatt-content-close{
+    align-content: center;
+    color: #ccc;
+    cursor: pointer;
+    border-radius: 100px;
+    display: grid;
+    font-size: 1.3rem;
+    height: 35px;
+    justify-content: center;
+    left: -17.5px;
+    top: -17.5px;
+    background-color: #222;
+    position: absolute;
+    width: 35px;
+}
+@media (max-width: 992px){
+    .chatt-content-close{
+        bottom: 0;
+        left: 50%;
+        margin-left: -17.5px;
+        top: 80%;
+        bottom: 0;
+    }
+}
+.chatt-content-toggle{
+    opacity: 1;
+    transform: translateY(0vh);
+}
+.chatt-content-head{
+    align-content: center;
+    background-color: #090909;
+    border-radius: 15px 0 0 0;
+    display: grid;
+    height: 170px;
+    text-align: center;
+}
+@media (max-width: 992px){
+    .chatt-content-head{
+        border-radius: 0px;
+    }
+}
+.chatt-content-head h5{
+    color: #fff;
+    line-height: 30px;
+    padding: 0 20px;
+}
+.chatt-content li{
+    list-style-type: none;
+    margin-top: 20px;
+}
+.chatt-content h6{
+    font-size: 0.9rem;
+}
+.chatt-content p{
+    font-size: 0.8rem;
+}
+.nav-footer-mobile{
+    display: none;
+}
+@media (max-width: 992px){
+    .nav-footer-mobile{
+        display: block;
+    }
+}
+.nav-footer-mobile{
+    background-color: #fff;
+    box-shadow: 1px 1px 5px #ccc;
+    font-size: 0.8rem;
+    position: absolute;
+    position: fixed;
+    bottom: 0;
+    text-decoration: none;
+    width: 100%;
+}
+.nav-footer-mobile ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+}
+.nav-footer-mobile i{
+    display: grid;
+    height: 25px;
+    font-size: 1.2rem;
+    margin-bottom: -3px;
+    margin-top: 15px;
+}
+.nav-footer-mobile a{
+    color: inherit;
+    text-decoration: none;
+}
+
+/* MDDAL */
+.contact ul{
+    padding: 0;
+    list-style-type: none;
+}
+.contact i{
+    margin-right: 5px;
+}
+.contact li{
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+.contact a{
+    text-decoration: none;
+}
+
+
+/* MDDAL */
+
+
+/* ADVOGADOS BLOCK */
+.advogados-cards h3{
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+.advogados-cards ul{
+    font-size: 0.9rem;
+    list-style: none;
+    padding: 0;
+}
+.advogados-cards li{
+    margin-bottom: 10px;
+}
+.advogados-cards i{
+    color: var(--color-link);
+}
+.advogados-cards .card{
+    border: 0;
+    box-shadow: 0 0 30px #333;
+}
+/* ADVOGADOS BLOCK */
