@@ -75,19 +75,19 @@
                         </div>
                         <div class="offcanvas-body">
                             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                                <li class="nav-item" data-bs-dismiss="offcanvas">
-                                    <a class="nav-link" href="#">Áreas de Atuação</a>
-                                </li>
-                                <li class="nav-item" data-bs-dismiss="offcanvas">
-                                    <a class="nav-link" aria-current="page" href="#">Quem Somos</a>
-                                </li>
-                                <li class="nav-item" data-bs-dismiss="offcanvas">
-                                    <a class="nav-link" aria-current="page" href="" data-bs-toggle="modal" data-bs-target="#modalContato">Contato</a>
-                                </li>
+                                <li class="nav-item" data-bs-dismiss="offcanvas"><a class="nav-link" href="#">Áreas de Atuação</a></li>
+                                <li class="nav-item" ><a class="nav-link" aria-current="page" href="#">Quem Somos</a></li>
+                                <li class="nav-item" data-bs-dismiss="offcanvas"><a class="nav-link" aria-current="page" href="" data-bs-toggle="modal" data-bs-target="#modalContato">Contato</a></li>
                                 <hr class="divider">
-                                <div class="social"><a href="https://www.facebook.com" target="_blank"><i class="bi bi-facebook"></i></a>
-                                    <a href="https://www.instagram.com" target="_blank"><i class="bi bi-instagram"></i></a></div>
                             </ul>
+                            <div class="social">
+                                <a href="https://www.facebook.com" target="_blank"><i class="bi bi-facebook"></i></a>
+                                <a href="https://www.instagram.com" target="_blank"><i class="bi bi-instagram"></i></a>
+                            </div>
+                            <div class="pt-5 mt-5 mobile-show">
+                                <i class="bi bi-arrow-bar-right text-black" data-bs-dismiss="offcanvas" role="button"></i>
+                            </div>
+                        </div>
                         </div>
                     </div>
                 </ul>
@@ -108,11 +108,11 @@
 
     <!-- LEADSPACE -->
     <section class="home-lead-space">
-        <article>
+        <div>
             <h1>Dedicados a promover a justiça e defender os seus direitos</h1>
             <p>Tenha o seu assunto tratado com competência, comprometimento e agilidade.</p>
             <p><button type="button" class="btn btn-outline-light" onclick="openChatt()">Falar com nossos advogados <i class="bi bi-chat-right-text"></i></button></p>
-        </article>
+        </div>
     </section>
     <!-- LEADSPACE -->
 
@@ -122,24 +122,24 @@
             <h2 class="text-center py-5">Área de Atuação</h2>
         </div>
         <div class="row">
-            <div class="col-lg-4">
+            <article class="col-lg-4">
                 <h3 class="fs-5 mt-4">Direito do Consumidor</h3>
                 <p>Esta área do direito lida com as relações entre consumidores e fornecedores de produtos e serviços,
                     garantindo que os direitos dos consumidores sejam respeitado.</p>
                 <p class="home-link-space"><a href="#">Mais informações <i class="bi bi-arrow-right"></i></a></p>
-            </div>
-            <div class="col-lg-4">
+            </article>
+            <article class="col-lg-4">
                 <h3 class="fs-5 mt-4">Direito Previdenciário</h3>
                 <p>Estamos dedicados a fornecer serviços jurídicos especializados para ajudar os clientes a obter
                     benefícios previdenciários justos e apropriados.</p>
                 <p class="home-link-space"><a href="#">Mais informações <i class="bi bi-arrow-right"></i></a></p>
-            </div>
-            <div class="col-lg-4">
+            </article>
+            <article class="col-lg-4">
                 <h3 class="fs-5 mt-4">Direito Público</h3>
                 <p>Uma área jurídica que abrange as relações entre o Estado, as entidades públicas e os cidadãos. Nossa
                     equipe de advogados oferece serviços jurídicos especializados em Direito Público.</p>
                 <p class="home-link-space"><a href="#">Mais informações <i class="bi bi-arrow-right"></i></a></p>
-            </div>
+            </article>
         </div>
     </section>
     <!-- AREA ATUAÇÃO -->
@@ -163,9 +163,9 @@
                                     <hr class="divider my-4">
                                 </div>
                                 <ul>
-                                    <li><i class="bi bi-envelope mx-1"></i> <a href="">j.machado@machadoefernandes.adv</a></li>
-                                    <li><i class="bi bi-newspaper mx-1"></i> <a href="">Posts no site</a></li>
-                                    <li><i class="bi bi-instagram mx-1"></i> <a href="">instagram/jefmachado</a></li>
+                                    <li><i class="bi bi-envelope text-primary mx-1"></i> <a href="">j.machado@machadoefernandes.adv</a></li>
+                                    <li><i class="bi bi-newspaper text-primary mx-1"></i> <a href="">Posts no site</a></li>
+                                    <li><i class="bi bi-instagram text-primary mx-1"></i> <a href="">instagram/jefmachado</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -181,9 +181,9 @@
                                     <hr class="divider my-4">
                                 </div>
                                 <ul>
-                                    <li><i class="bi bi-envelope mx-1"></i> <a href="">l.fernandes@machadoefernandes.adv</a></li>
-                                    <li><i class="bi bi-newspaper mx-1"></i> <a href="">Posts no site</a></li>
-                                    <li><i class="bi bi-instagram mx-1"></i> <a href="">instagram/lefernandes20</a></li>
+                                    <li><i class="bi bi-envelope text-primary mx-1"></i> <a href="">l.fernandes@machadoefernandes.adv</a></li>
+                                    <li><i class="bi bi-newspaper text-primary mx-1"></i> <a href="">Posts no site</a></li>
+                                    <li><i class="bi bi-instagram text-primary mx-1"></i> <a href="">instagram/lefernandes20</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -201,17 +201,17 @@
         </div>
         <div class="container text-center">
             <div class="row">
-                <div class="col-lg-6 offset-lg-3">
+                <article class="col-lg-6 offset-lg-3">
                     <p class="fw-bold">Atendimento humanizado e responsável, mantendo o cliente sempre informado e
                         buscando a melhor
                         solução no menor tempo possível.</p>
                     <ul>
                         <li>Atendimento imediato para todo o Brasil</li>
                         <li>Experiência, credibilidade e segurança</li>
-                        <li>Praticidade e comodidade com atendimento online. Envie e assine seus documentos via <a href="#" data-bs-toggle="modal" data-bs-target="#whatsAppModal">WhatsApp <i class="bi bi-whatsapp"></i></a></li>
+                        <li>Praticidade e comodidade com atendimento online. Envie e assine seus documentos via <a href="https://api.whatsapp.com/send?phone=5517997187129&text=Olá, acessei o site de vocês e preciso obter mais informações sobre os serviços" target="_blank">WhatsApp <i class="bi bi-whatsapp"></i></a></li>
                     </ul>
                     <p class="home-link-space"><a href="#">Conheça a Machado & Fernandes <i class="bi bi-arrow-right"></i></a></p>
-                </div>
+                </article>
             </div>
         </div>
     </section>
@@ -263,7 +263,7 @@
                         </div>
                     </div>
                 </div>
-                <p class="home-link-space text-center"><a href="#">Ver mais posts <i class="bi bi-arrow-right"></i></a></p>
+                <p class="home-link-space text-center text-primary"><a href="#">Ver mais posts <i class="bi bi-arrow-right"></i></a></p>
             </div>
         </div>
     </section>
@@ -285,11 +285,11 @@
         </div>
         <div class="mobile-hide">
             <i class="bi bi-geo-alt"></i>
-            <p>Av Doutor Francisco Félix Mendonça - 4911</p>
-            <p>CEP 15720-0001 - Palmeira D'Oeste - São Paulo - <a href="">Maps</a></p>
+            <p>Av Doutor Francisco Félix Mendonça · 4911</p>
+            <p>CEP 15720-000 · Palmeira D'Oeste · São Paulo · <a href="">Maps</a></p>
         </div>
         <div class="mobile-hide">
-            <i class="bi bi-telephone-outbound"></i>
+            <i class="bi bi-telephone"></i>
             <p>(17) 99718-7129</p>
         </div>
         <div class="mobile-hide">
@@ -313,7 +313,7 @@
             <h5>Como deseja se comunicar com a Machado & Fernandes?</h5>
         </div>
         <div class="d-grid gap-2 p-3 chatt-mobile">
-            <a class="btn btn-success" data-bs-toggle="modal" data-bs-target="#whatsAppModal"><i class="bi bi-whatsapp mx-1"></i> WhatsApp</a></a>
+            <a class="btn btn-success" target="_blank" href="https://api.whatsapp.com/send?phone=5517997187129&text=Olá, acessei o site de vocês e preciso obter mais informações sobre os serviços"><i class="bi bi-whatsapp mx-1"></i> WhatsApp</a></a>
             <a class="mobile-show btn bg-primary text-dark bg-opacity-50" href="#"><i class="bi bi-telephone-outbound mx-1"></i> Ligar</a>
             <a class="btn bg-secondary text-dark bg-opacity-25" href="#"><i class="bi bi-chat-dots mx-1"></i> Chatt</a>
             <a class="btn btn-light" href="mailto:sac@machadoefernandes.adv.br"><i class="bi bi-envelope mx-1"></i> E-mail</a>
@@ -321,7 +321,7 @@
           <hr class="divider">
           <div class="text-center">
             <h6>Funcionamento:</h6>
-            <p>Segunda a Sexta - 9h às 18h</p>
+            <p>Segunda a Sexta · 9h às 18h</p>
           </div>
     </div>
     <!-- CHATT -->
@@ -330,7 +330,7 @@
     <nav class="nav-footer-mobile">
         <ul>
             <li><a href=""><i class="bi bi-telephone-outbound"></i>Ligar</a></li>
-            <li><a href="#" data-bs-toggle="modal" data-bs-target="#whatsAppModal"><i class="bi bi-whatsapp"></i>WhatsApp</a></li>
+            <li><a target="_blank" href="https://api.whatsapp.com/send?phone=5517997187129&text=Olá, acessei o site de vocês e preciso obter mais informações sobre os serviços"><i class="bi bi-whatsapp"></i>WhatsApp</a></li>
             <li><a href=""><i class="bi bi-chat-dots"></i>Chatt</a></li>
             <li><button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
@@ -341,33 +341,9 @@
     </nav>
     <!-- NAV MOBILE -->
     
-
-    <!-- MODAL WHATSAPP -->
-    <div class="modal fade" id="whatsAppModal" tabindex="-1" aria-labelledby="whatsAppModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="whatsAppModalLabel">Mensagem WhatsApp</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <div>
-                    <textarea class="form-control" id="whatsAppMessage" rows="5">Olá, acessei o site de vocês e desejo obter informações adicionais sobre os serviços por WhatsApp</textarea>
-                </div>
-            </div>
-            <div class="modal-footer">
-            <div class="d-grid gap-2">
-                <span data-bs-dismiss="modal"><a class="btn btn-success whatsappSend" onclick="whatsAppSend()" target="_blank"><i class="bi bi-whatsapp"></i> Enviar</a></span>
-            </div>
-            </div>
-          </div>
-        </div>
-    </div>
-    <!-- MODAL WHATSAPP -->
-
     <!-- MODAL CONTATO -->
     <div class="modal fade" id="modalContato" tabindex="-1" aria-labelledby="modalContatoLabel" aria-hidden="true">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-lg">
             <div class="modal-content">
             <div class="modal-header">
                 <h2 class="modal-title fs-5" id="modalContatoLabel">Contato</h2>
@@ -377,13 +353,13 @@
                 <div class="contact">
                     <ul>
                         <li><i class="bi bi-telephone-outbound"></i> Tel.: (17) 99718-7129</li>
-                        <li><i class="bi bi-whatsapp"></i> <a target="_blank" href="https://api.whatsapp.com/send?phone=5517997187129&text=Olá, acessei o site de vocês e desejo obter informações adicionais sobre os serviços por WhatsApp">Abrir WhatsApp <i class="bi bi-box-arrow-up-right"></i></a></li>
+                        <li><i class="bi bi-whatsapp"></i> <a target="_blank" href="https://api.whatsapp.com/send?phone=5517997187129&text=Olá, acessei o site de vocês e desejo mais informações">Abrir WhatsApp <i class="bi bi-box-arrow-up-right"></i></a></li>
                         <li><i class="bi bi-chat-dots"></i> <a target="_blank" href="#">Abrir Chatt</a></li>
                         <li><i class="bi bi-envelope"></i> <a href="mailto:sac@machadoefernandes.adv.br">sac@machadoefernandes.adv.br <i class="bi bi-box-arrow-up-right"></i></a></li>
                     </ul>
                     <h5 class="mt-5">Localização</h5>
                     <ul>
-                        <li><i class="bi bi-geo-alt"></i> Av Doutor Francisco Félix Mendonça - 4911 - CEP 15720-0001 - Palmeira D'Oeste - São Paulo - <a href="">Abrir Maps <i class="bi bi-box-arrow-up-right"></i></a></li>
+                        <li><i class="bi bi-geo-alt"></i>Av Doutor Francisco Félix Mendonça · 4911 · CEP 15720-000 · Palmeira D'Oeste · São Paulo · <a href="">Abrir Maps <i class="bi bi-box-arrow-up-right"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -401,47 +377,23 @@
 
 window.addEventListener("load",function(){document.querySelector(".preload").style.display="none"});
 
-
-const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
-
-
-
-
 function openChatt(){
     const chattContent = document.querySelector('.chatt-content');
-    const chattClose = document.querySelectorAll('bi-chat-right-text');
     chattContent.classList.toggle('chatt-content-toggle');
-    chattClose.classList.toggle('lol')
-    e.preventDefault();
 }
 
-function whatsAppSend(e){
-    const whatsAppUrl = 'https://api.whatsapp.com/send?phone=5517997187129&text=';
-    const whatsAppMessage = document.getElementById('whatsAppMessage').value;
-    const whatsAppButton = document.querySelector('.whatsappSend');
-    const whatsAppMessageFull = whatsAppUrl+whatsAppMessage
-    whatsAppButton.setAttribute('href', whatsAppMessageFull)
-    // alert(whatsAppMessageFull)
-    e.preventDefault();
-}
+// function whatsAppSend(e){
+//     const whatsAppUrl = 'https://api.whatsapp.com/send?phone=5517997187129&text=';
+//     const whatsAppMessage = document.getElementById('whatsAppMessage').value;
+//     const whatsAppButton = document.querySelector('.whatsappSend');
+//     const whatsAppMessageFull = whatsAppUrl+whatsAppMessage
+//     whatsAppButton.setAttribute('href', whatsAppMessageFull)
+//     e.preventDefault();
+// }
 
 const currentDate = new Date();
 const currentYear = currentDate.getFullYear();
 document.querySelector('.credits-year').innerHTML = `${currentYear}`
-
-// document.addEventListener("DOMContentLoaded", function() {
-//     var navbar = document.querySelector(".navbar");
-
-//     window.addEventListener("scroll", function() {
-//         var scrollPosition = window.scrollY;
-//         var opacity = scrollPosition / 200; // Ajuste conforme necessário
-
-//         navbar.classList.toggle('navbar-bg');
-//     });
-// });
-
-
 
 </script>
 <script src="assets/js/script.js"></script>
