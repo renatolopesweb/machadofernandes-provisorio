@@ -7,6 +7,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Tiro+Telugu&display=swap');
 
+:root {
+    
+    --primary: #0288D1;
+    --color-black: #010101;
+}
+.bg-primary, .btn-primary{background-color: var(--primary);}
+.text-primary a{color: var(--primary)!important;}
+a {color: var(--primary);}
 
 h1, h2, h3, h4, h5{
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -35,8 +43,25 @@ h1, h2, h3, h4, h5{
 
 /* CLASS */
 .divider{opacity: 0.1;}
-div{transition: 0.3s;}
-.preload{width:100%;height:100vh;display:grid;align-content:center;align-items:center;opacity:.5;position:absolute;z-index:1;text-align:center;transition:.3s}.preload-content{max-width:90%;margin:auto}
+div{transition: 0.5s;}
+.preload{
+    width:100%;
+    height:100vh;
+    /* background-color: #fff; */
+    display:grid;
+    align-content:center;
+    align-items:center;
+    /* opacity:.1; */
+    position:absolute;
+    position: fixed;
+    z-index:1;
+    text-align:center;
+    transition:.3s
+}
+.preload-content{
+    max-width:90%;
+    margin:auto;
+}
 /* CLASS */
 .navbar{
     background-color: #090909;
@@ -65,7 +90,6 @@ div{transition: 0.3s;}
 }
 @media (max-width: 992px){
     .home-link-space{
-        margin-top: auto;
         margin-bottom: 50px;
     }
 }
@@ -83,7 +107,7 @@ div{transition: 0.3s;}
 
 .home-lead-space{
     align-content: center;
-    background-color: #010101;
+    background-color: var(--color-black);
     background-image: url(../images/bg-machado-fernandes.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -93,7 +117,6 @@ div{transition: 0.3s;}
     display: grid;
     height: 100vh;
     position: relative;
-    text-align: center;
 }
 .home-lead-space h1{
     font-size: 2.2rem;
@@ -148,9 +171,11 @@ div{transition: 0.3s;}
     margin-bottom: 20px;
 }
 .home-advogados{
-    background-color: #010101;
+    background-color: var(--color-black);
     position: relative;
 }
+.home-advogados li i{color: var(--primary)!important;}
+
 .home-advogados::before, .home-advogados::after{
     content: '';
     width: 100%;
@@ -200,52 +225,29 @@ div{transition: 0.3s;}
 }
 
 footer{
-    align-items: center;
-    background-image: url(../images/bg-machado-fernandes.jpg);
-    background-size: cover;
-    background-position: center;
+    background-color: var(--color-black);
+    color: #ccc;
     display: grid;
     height: 40vh;
+    align-content: center;
     font-size: 0.8rem;
-    grid-template-columns: 450px auto auto auto;
 }
-footer div{
-    text-align: center;
+footer ul{
+    list-style-type: none;
+}
+footer li{
+    margin: 10px 0;
 }
 footer i{
-    font-size: 4rem;
-}
-footer p{
-    margin: 0;
-}
-footer, footer a, .credits, .credits a{
-    color: #777;
-}
-footer div:nth-child(1){
-    align-content: center;
-    background-color: rgba(0,0,0,0.7);
-    display: grid;
-    justify-content: center;
-    margin: auto;
-    height: 40vh;
-    padding: 0 50px;
-}
-footer div:nth-child(1) img{
-    margin: auto;
-}
-@media (max-width: 992px){
-    footer{
-        grid-template-columns: 1fr;
-    }
-    footer div:nth-child(1) img{
-        width: 80%;
-    }
+    margin-right: 5px;
 }
 .credits{
     align-items: center;
-    background-color: #010101;
+    background-color: #121212;
+    border-top: 1px solid #ffffff0a;
+    color: #ccc;
     display: flex;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     height: 50px;
     padding: 0 20px;
     text-align: center;
@@ -292,46 +294,91 @@ footer div:nth-child(1) img{
 .chatt i:active{
     opacity: 0.8;
 }
+.chatt-off{
+    right: -80px;
+    bottom: -80px;
+}
 .chatt-content{
+    display: grid;
+    /* align-content: end; */
+    /* align-items: center; */
     background-color: #fff;
-    bottom: 0px;
-    box-shadow: 11px 9px 15px 5px #333;
+    bottom: 20px;
+    /* box-shadow: 11px 9px 15px 5px #333; */
+    box-shadow: rgb(51 51 51 / 26%) 8px 7px 20px 0px;
     border-radius: 20px 0 0 0;
     height: calc(100vh - 120px);
-    opacity: 0;
+    /* opacity: 0; */
     position: relative;
     position: fixed;
-    right: 0;
+    right: 20px;
     transform: translateY(100vh);
-    width: 350px;
+    width: 280px;
     z-index: 1;
 }
 @media (max-width: 992px){
     .chatt-content{
+        bottom: 0;
         border-radius: 0px;
         height: calc(100vh - 80px);
+        right: 0;
         width: 100%;
     }
 }
-.chatt-content a:nth-child(1){
-    color: #fff;
-    text-decoration: none;
+.chatt-content div{
+    display: grid;
+    align-content: end;
+}
+.chatt-content div:nth-child(4){
+    background-color: #f0f0f0;
+    padding: 15px 0 10px 0;
+}
+@media (max-width: 992px){
+    .chatt-content div:nth-child(4){
+        padding: 0;
+    }
+}
+.chatt-content i{
+    font-size: 5rem;
+    margin: 0;
+    padding: 0;
+}
+.chatt-content a i{
+    font-size: 0.8rem;
+}
+.chatt-content h3{
+    color: #212529;
+    font-family: var(--bs-body-font-family)!important;
+    font-size: 0.7rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.chatt-content p{
+    font-size: 0.8rem;
+}
+.chatt-content a{
+    /* color: inherit; */
+    /* text-decoration: underline; */
 }
 
 .chatt-content-close{
-    align-content: center;
-    color: #ccc;
+    color: #fff;
     cursor: pointer;
     border-radius: 100px;
     display: grid;
-    font-size: 1.3rem;
+    align-content: center;
+    font-weight: lighter;
     height: 35px;
     justify-content: center;
     left: -17.5px;
     top: -17.5px;
-    background-color: #222;
+    /* background-color: #222; */
     position: absolute;
     width: 35px;
+}
+.chatt-content-close i{
+    font-size: 1.5rem;
 }
 @media (max-width: 992px){
     .chatt-content-close{
@@ -351,7 +398,8 @@ footer div:nth-child(1) img{
     background-color: #090909;
     border-radius: 15px 0 0 0;
     display: grid;
-    height: 170px;
+    padding: 20px 0;
+    /* height: 150px; */
     text-align: center;
 }
 .chatt-content-head h5{
@@ -371,12 +419,7 @@ footer div:nth-child(1) img{
     list-style-type: none;
     margin-top: 20px;
 }
-.chatt-content h6{
-    font-size: 0.9rem;
-}
-.chatt-content p{
-    font-size: 0.8rem;
-}
+
 
 
 @media (max-width: 992px){
