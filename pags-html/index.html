@@ -46,7 +46,7 @@ integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2
 
 
     <!-- NAV -->
-    <nav class="navbar fixed-top">
+    <nav class="navbar fixed-top" id="navbar">
         <div class="container">
             <div class="mobile-hide my-2">
                 <a class="navbar-brand" href="home.html">
@@ -62,7 +62,7 @@ integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2
             </div>
             <div class="d-flex">
                 <ul class="nav nav-pills">
-                    <button class="navbar-toggler mobile-hide" type="button" data-bs-toggle="offcanvas"
+                    <button class="navbar-toggler mobile-hide" title="Menu" type="button" data-bs-toggle="offcanvas"
                         data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                         <i class="bi bi-list"></i>
                     </button>
@@ -83,10 +83,9 @@ integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2
                                 <a href="https://www.facebook.com" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Facebook"><i class="bi bi-facebook"></i></a>
                                 <a href="https://www.instagram.com" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Instagram"><i class="bi bi-instagram"></i></a>
                             </div>
-                            <div class="pt-5 mt-5 mobile-show">
-                                <i class="bi bi-arrow-bar-right text-primary" data-bs-dismiss="offcanvas" role="button"></i>
+                            <div class="pt-5 mt-5 text-center mobile-show">
+                                <i class="bi bi-x-lg text-black" data-bs-dismiss="offcanvas" role="button" title="Fechar"></i>
                             </div>
-                        </div>
                         </div>
                     </div>
                 </ul>
@@ -280,11 +279,11 @@ integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2
     <!-- AREA DE CONTEXTO 2 -->
 
     <!-- MODAL ADVOGADOS -->
-    <div class="modal fade" id="modalAdvogado1" tabindex="-1" aria-labelledby="modalContatoLabel" aria-hidden="true">
+    <div class="modal fade" id="modalAdvogado1" tabindex="-1" aria-labelledby="modalAdvogado1" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
             <div class="modal-header">
-                <h2 class="modal-title fs-5" id="modalContatoLabel">Dr. Jeferson de Paes Machado</h2>
+                <h2 class="modal-title fs-5">Dr. Jeferson de Paes Machado</h2>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
@@ -294,11 +293,11 @@ integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2
             </div>
         </div>
     </div>
-    <div class="modal fade" id="modalAdvogado2" tabindex="-1" aria-labelledby="modalContatoLabel" aria-hidden="true">
+    <div class="modal fade" id="modalAdvogado2" tabindex="-1" aria-labelledby="modalAdvogado2" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
             <div class="modal-header">
-                <h2 class="modal-title fs-5" id="modalContatoLabel">Dr. Leandro Fernandes</h2>
+                <h2 class="modal-title fs-5">Dr. Leandro Fernandes</h2>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
@@ -310,7 +309,6 @@ integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2
     </div>
     <!-- MODAL ADVOGADOS -->
 
-
     <!-- FOOTER -->
     <footer class="container-fluid">
         <div class="row">
@@ -319,7 +317,7 @@ integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2
           </div>
           <div class="col">
             <ul>
-                <li><i class="bi bi-geo-alt"></i> Av Doutor Francisco Félix Mendonça, 4911 - CEP: 15720-000 - Palmeira D'Oeste - São Paulo - <a href="">Abrir Maps</a></li>
+                <li><i class="bi bi-geo-alt"></i> <span class="localmaps"></span></li>
                 <li><i class="bi bi-telephone"></i> (17) 99718-7129 <a class="whatsappAdd">Abrir WhatsApp</a></li>
                 <li><i class="bi bi-envelope"></i> <a class="mailAdd">contato@machadoefernandes.adv.br</a></li>
             </ul>
@@ -332,6 +330,10 @@ integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2
         </div>
     </section>
     <!-- FOOTER -->
+
+
+
+
 
     <!-- CHATT -->
     <div class="chatt bg-primary">
@@ -355,13 +357,13 @@ integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2
             <div>
                 <h3>Funcionamento:</h3>
                 <p>Segunda a Sexta · 9h às 18h</p>
-                <p class="mobile-show"><i role="button" class="bi bi-arrow-down text-dark fs-1" onclick="openChatt()"></i></p>
+                <p class="mobile-show"><i role="button" class="bi bi-arrow-down text-dark fs-1" onclick="openChatt()" title="Contato"></i></p>
             </div>
     </div>
     <!-- CHATT -->
     <!-- NAV MOBILE -->
     <!-- <div class="nav-footer-mobile bg-primary text-white"> -->
-    <nav class="nav-footer-mobile bg-primary text-white">
+    <nav class="nav-footer-mobile bg-primary text-white" id="nav-footer-mobile">
         <ul>
             <li><a href="tel:+5517997187129"><i class="bi bi-telephone-outbound"></i>Ligar</a></li>
             <li><a class="whatsappAdd"><i class="bi bi-whatsapp"></i>WhatsApp</a></li>
@@ -389,7 +391,7 @@ integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2
                     </ul>
                     <h5 class="mt-5">Localização</h5>
                     <ul>
-                        <li><i class="bi bi-geo-alt"></i>Av Doutor Francisco Félix Mendonça, 4911 - CEP: 15720-000 - Palmeira D'Oeste - São Paulo - <a href="">Abrir Maps</a></li>
+                        <li><i class="bi bi-geo-alt"></i> <span class="localmaps"></span></li>
                     </ul>
                 </div>
             </div>
@@ -404,13 +406,41 @@ integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2
 
 <script>
 
+// REMOVE TRANSTION WHEN SIDEBAR ACTIVE
+document.addEventListener('DOMContentLoaded', function () {
+    var navbar = document.querySelector('.navbar');
+    var sideNav = new bootstrap.Offcanvas(document.getElementById('navbar')); // Substitua com o ID real do seu side nav
+
+    sideNav._element.addEventListener('show.bs.offcanvas', function () {
+      navbar.style.transition = 'none';
+    });
+
+    sideNav._element.addEventListener('hidden.bs.offcanvas', function () {
+      navbar.style.transition = '';
+    });
+  });
+// CLASS ADD NAVBAR FIXED
+document.addEventListener('DOMContentLoaded', function () {
+      let navbar = document.getElementById('navbar');
+      let navbarMobile = document.getElementById('nav-footer-mobile');
+      let lastScrollTop = 0;
+      window.addEventListener('scroll', function () {
+        let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+        if (scrollTop > lastScrollTop) {
+          navbar.classList.add('navbarOff');
+        } else {
+          navbar.classList.remove('navbarOff');
+        }
+        lastScrollTop = scrollTop;
+
+      });
+    });
 // PRELOAD
 window.addEventListener("load",function(){document.querySelector(".preload").style.display="none"});
-
 // TOOLTIPS
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
-
 // CHATT
 function openChatt(){
     const chattContent = document.querySelector('.chatt-content');
@@ -419,8 +449,7 @@ function openChatt(){
     chattButton.classList.toggle('chatt-off')
 }
 
-// WHATSAPP AND MAIL DEFAULT
-
+// WHATSAPP, MAIL, LOCAL DEFAULT
 (function () {
   let whatsappAdds = document.querySelectorAll('.whatsappAdd'); 
   whatsappAdds.forEach(function(whatsappAdd) {
@@ -436,6 +465,13 @@ function openChatt(){
 });
 })();
 
+
+(function () {
+  let localMaps = document.querySelectorAll('.localmaps'); 
+  localMaps.forEach(function(localMap) {
+    localMap.innerHTML = `Av Doutor Francisco Félix Mendonça, 4911 - CEP: 15720-000 - Palmeira D'Oeste - São Paulo - <a href="">Abrir Maps</a>`;
+});
+})();
 
 // CURRENT YEAR
 const currentDate = new Date();
