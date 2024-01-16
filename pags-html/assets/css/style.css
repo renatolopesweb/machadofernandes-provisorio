@@ -400,16 +400,13 @@ footer i{
 }
 @media (max-width: 992px){
     .chatt-content div:nth-child(4){
-        /* padding: 0; */
+        padding: 0;
     }
 }
 .chatt-content i{
     font-size: 5rem;
     margin: 0;
     padding: 0;
-}
-.chatt-content a i{
-    /* font-size: 0.8rem; */
 }
 .chatt-content h3{
     color: #212529;
@@ -422,6 +419,16 @@ footer i{
 
 .chatt-content p{
     font-size: 0.8rem;
+}
+
+@media (max-width: 992px){
+    .chatt-content h3{
+        font-size: 1rem;
+    }
+    
+    .chatt-content p{
+        font-size: 1rem;
+    }
 }
 
 .chatt-content-close{
@@ -440,15 +447,6 @@ footer i{
 }
 .chatt-content-close i{
     font-size: 1.5rem;
-}
-@media (max-width: 992px){
-    .chatt-content-close{
-        bottom: 0;
-        left: 50%;
-        margin-left: -17.5px;
-        top: 80%;
-        bottom: 0;
-    }
 }
 .chatt-content-toggle{
     opacity: 1;
