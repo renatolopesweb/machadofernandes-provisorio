@@ -11,6 +11,7 @@
     
     /* --primary: #0288D1; */
     --color-black: #010101;
+    --color-black-2: #111;
 }
 
 
@@ -110,6 +111,12 @@ div{transition: 0.5s;}
     }
 }
 
+header{
+    background-color: var(--color-black);
+    padding: 40px 0;
+    text-align: center;
+}
+
 
 /* CLASS */
 
@@ -177,6 +184,9 @@ div{transition: 0.5s;}
     align-content: start;
     display: grid;
     height: 100vh;
+}
+.home-area-atuacao i{
+    font-size: 1.2rem;
 }
 @media (max-width: 992px){
     .home-area-atuacao{
@@ -269,7 +279,7 @@ footer i{
 }
 .credits{
     align-content: center;
-    background-color: #111;
+    background-color: var(--color-black-2);
     border-top: 1px solid #ffffff0a;
     color: #ccc;
     display: grid;
@@ -303,6 +313,8 @@ footer i{
     width: 80px;
     z-index: 2;
 }
+
+
 .chatt:hover{
     opacity: 0.9;
 }
@@ -324,6 +336,16 @@ footer i{
     right: -80px;
     bottom: -80px;
 }
+
+
+
+/* PÁGINA SOBRE */
+
+
+/* PÁGINA SOBRE */
+
+
+
 .chatt-content{
     display: grid;
     background-color: #fff;
@@ -391,7 +413,6 @@ footer i{
     justify-content: center;
     left: -17.5px;
     top: -17.5px;
-    /* background-color: #222; */
     position: absolute;
     width: 35px;
 }
@@ -523,3 +544,50 @@ footer i{
     box-shadow: 0 0 30px #333;
 }
 /* ADVOGADOS BLOCK */
+
+
+/* PAGES */
+
+.title-page{
+    
+}
+.pages{
+    padding-bottom: 100px;
+}
+
+.pages h1{
+    align-content: center;
+    background-color: #f0f0f0;
+    display: grid;
+    font-size: 2rem;
+    height: 120px;
+    margin-top: 80px;
+    margin-bottom: 0;
+    position: relative;
+    text-align: center;
+}
+.pages h2{
+    font-size: 1.6rem;
+    margin: 3rem 0 0.8rem 0;
+}
+.pages-lead-space{
+    background-color: var(--color-black-2);
+    margin-bottom: 60px;
+}
+.pages-lead-space figure{
+    margin: 0;
+}
+.pages-lead-space img{
+    height: 320px;
+    box-shadow: 0 0 10px #000;
+}
+@media (max-width: 992px){
+    .pages h1{
+        margin-top: 0px;
+    }
+    .pages-lead-space img{
+        height: auto;
+        width: 100%;
+    }
+}
+/* PAGES */

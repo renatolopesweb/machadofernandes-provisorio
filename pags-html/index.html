@@ -43,7 +43,12 @@ integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2
 <body>
 
     <!-- <script src="//code.jivosite.com/widget/YcWB5kU0F6" async></script> -->
-
+    
+    <!-- HEADER -->
+    <header class="mobile-show">
+        <img src="./assets/images/logo-machado-fernandes.png" alt="Logo da Machado & Fernandes Advogados" width="280">
+    </header>
+    <!-- HEADER -->
 
     <!-- NAV -->
     <nav class="navbar fixed-top" id="navbar">
@@ -52,13 +57,6 @@ integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2
                 <a class="navbar-brand" href="home.html">
                 <img src="./assets/images/logo-machado-fernandes.png" alt="Logo da Machado & Fernandes Advogados"
                     width="250" class="d-inline-block align-text-top justify-content-start"></a>
-            </div>
-            <div class="container text-center mobile-show">
-                <div class="row text-center my-2">
-                    <a class="navbar-brand" href="home.html">
-                        <img src="./assets/images/logo-machado-fernandes.png" alt="Logo da Machado & Fernandes Advogados"
-                            width="250"></a>
-                </div>
             </div>
             <div class="d-flex">
                 <ul class="nav nav-pills">
@@ -83,8 +81,8 @@ integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2
                                 <a href="https://www.facebook.com" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Facebook"><i class="bi bi-facebook"></i></a>
                                 <a href="https://www.instagram.com" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Instagram"><i class="bi bi-instagram"></i></a>
                             </div>
-                            <div class="pt-5 mt-5 text-center mobile-show">
-                                <i class="bi bi-x-lg text-black" data-bs-dismiss="offcanvas" role="button" title="Fechar"></i>
+                            <div class="mt-5 text-center mobile-show">
+                                <button type="button" class="btn btn-light align-baseline" data-bs-dismiss="offcanvas" role="button" title="Fechar">X Fechar menu</button>
                             </div>
                         </div>
                     </div>
@@ -121,18 +119,21 @@ integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2
         </div>
         <div class="row">
             <article class="col-lg-4">
+                <i class="bi bi-cart4"></i>
                 <h3 class="fs-5 mt-4">Direito do Consumidor</h3>
                 <p>Esta área do direito lida com as relações entre consumidores e fornecedores de produtos e serviços,
                     garantindo que os direitos dos consumidores sejam respeitado.</p>
                 <p class="home-link-space"><a href="#">Mais informações <i class="bi bi-arrow-right"></i></a></p>
             </article>
             <article class="col-lg-4">
+                <i class="bi bi-list-task"></i>
                 <h3 class="fs-5 mt-4">Direito Previdenciário</h3>
                 <p>Estamos dedicados a fornecer serviços jurídicos especializados para ajudar os clientes a obter
                     benefícios previdenciários justos e apropriados.</p>
                 <p class="home-link-space"><a href="#">Mais informações <i class="bi bi-arrow-right"></i></a></p>
             </article>
             <article class="col-lg-4">
+                <i class="bi bi-bank"></i>
                 <h3 class="fs-5 mt-4">Direito Público</h3>
                 <p>Uma área jurídica que abrange as relações entre o Estado, as entidades públicas e os cidadãos. Nossa
                     equipe de advogados oferece serviços jurídicos especializados em Direito Público.</p>
@@ -469,7 +470,7 @@ function openChatt(){
 (function () {
   let localMaps = document.querySelectorAll('.localmaps'); 
   localMaps.forEach(function(localMap) {
-    localMap.innerHTML = `Av Doutor Francisco Félix Mendonça, 4911 - CEP: 15720-000 - Palmeira D'Oeste - São Paulo - <a href="">Abrir Maps</a>`;
+    localMap.innerHTML = `Av. Doutor Francisco Félix Mendonça, 4911 - CEP: 15720-000 - Palmeira D'Oeste - São Paulo - <a href="">Abrir Maps</a>`;
 });
 })();
 
