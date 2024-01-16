@@ -394,13 +394,13 @@ footer i{
     display: grid;
     align-content: end;
 }
-.chatt-content div:nth-child(5){
+.chatt-content div:nth-child(4){
     background-color: #f0f0f0;
     padding: 15px 0 10px 0;
 }
 @media (max-width: 992px){
-    .chatt-content div:nth-child(5){
-        padding: 0;
+    .chatt-content div:nth-child(4){
+        /* padding: 0; */
     }
 }
 .chatt-content i{
