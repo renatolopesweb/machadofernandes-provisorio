@@ -12,6 +12,8 @@
     /* --primary: #0288D1; */
     --color-black: #010101;
     --color-black-2: #111;
+    --color-black-3: #090909;
+    
 }
 
 
@@ -102,11 +104,17 @@ div{transition: 0.5s;}
 
 
 .navbar{
-    background-color: #090909;
+    background-color: var(--color-black-3);
     transition: .5s;
 }
+@media (max-width: 992px){
+    .navbar{
+        background-color: transparent;
+    }
+}
+
 .nav a{
-    color: #090909!important;
+    color: var(--color-black-3)!important;
 }
 .nav a:hover{
     text-decoration: none!important;
@@ -452,17 +460,7 @@ footer i{
     opacity: 1;
     transform: translateY(0vh);
 }
-.chatt-content-head{
-    align-content: center;
-    background-color: #090909;
-    border-radius: 15px 0 0 0;
-    display: grid;
-    padding: 20px 0;
-    text-align: center;
-}
-.chatt-content-head h5{
-    margin: 0;
-}
+
 @media (max-width: 992px){
     .chatt-content-head{
         border-radius: 0px;
