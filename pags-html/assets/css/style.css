@@ -67,6 +67,24 @@ div{transition: 0.5s;}
     max-width:90%;
     margin:auto;
 }
+
+
+.custom-desktop-mt-50{
+    margin-top: 30px;
+}
+.custom-mobile-mt-30{
+    margin-top: 0px;
+}
+@media (max-width: 992px){
+    .custom-desktop-mt-50{
+        margin-top: 0px;
+    }
+    .custom-mobile-mt-30{
+        margin-top: 30px;
+    }
+}
+
+
 /* CLASS */
 
 .navbar-transition-off{
@@ -190,7 +208,7 @@ header{
     height: 100vh;
 }
 .home-area-atuacao i{
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 @media (max-width: 992px){
     .home-area-atuacao{
@@ -595,3 +613,11 @@ footer i{
     }
 }
 /* PAGES */
+
+/* QUEM SOMOS */
+.quem-somos h3{
+    font-size: 0.8rem;
+    font-family: inherit;
+    margin: 0;
+}
+/* QUEM SOMOS */
