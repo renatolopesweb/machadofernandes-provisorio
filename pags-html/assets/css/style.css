@@ -386,7 +386,7 @@ footer i{
 @media (max-width: 992px){
     .chatt-content{
         border-radius: 0px;
-        height: calc(100vh - 80px);
+        height: 100vh;
         width: 100%;
     }
 }
@@ -394,7 +394,7 @@ footer i{
     display: grid;
     align-content: end;
 }
-.chatt-content div:nth-child(4){
+.chatt-content div:nth-child(5){
     background-color: #f0f0f0;
     padding: 15px 0 10px 0;
 }
