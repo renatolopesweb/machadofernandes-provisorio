@@ -100,8 +100,6 @@ div{transition: 0.5s;}
     margin-bottom: -100px!important;
     transition: .5s;
 }
-
-
 .navbar{
     background-color: var(--color-black-3);
     transition: .5s;
@@ -111,7 +109,6 @@ div{transition: 0.5s;}
         background-color: transparent;
     }
 }
-
 .nav a{
     color: var(--color-black-3)!important;
 }
@@ -121,6 +118,16 @@ div{transition: 0.5s;}
 .nav i{
     color: #fff;
     font-size: 1.5rem;
+}
+.navbar-nav i{
+    color: inherit;
+    font-size: 1rem;
+    margin-right: 10px;
+}
+@media (max-width: 992px){
+    .navbar-nav li a{
+        font-size: 1.1rem;
+    }
 }
 .social i{
     color: inherit;
