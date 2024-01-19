@@ -39,32 +39,6 @@
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
 
-    <style>
-        .chatt{
-    align-items: center;
-    border-radius: 100px;
-    color: #fff;
-    cursor: pointer;
-    display: flex;
-    font-size: 0.9rem;
-    font-weight: bold;
-    height: 50px;
-    width: 200px;
-    right: 20px;
-    bottom: 20px;
-}
-.chatt i{
-    color: #fff;
-    cursor: pointer;
-    font-size: 1.2rem;
-    margin: 0 0 0 10px;
-}
-
-.chatt-off{
-    bottom: -80px;
-}
-    </style>
-
 
 <body>
 
@@ -73,7 +47,9 @@
     <!-- HEADER -->
     <header class="mobile-show">
         <div>
-            <img src="./assets/images/logo-machado-fernandes.png" alt="Logo da Machado & Fernandes Advogados" width="280">
+            <a href="index.html">
+                <img src="./assets/images/logo-machado-fernandes.png" alt="Logo da Machado & Fernandes Advogados" width="280">
+            </a>
         </div>
     </header>
     <!-- HEADER -->
@@ -82,7 +58,7 @@
     <nav class="navbar fixed-top" id="navbar">
         <div class="container">
             <div class="mobile-hide my-2">
-                <a class="navbar-brand" href="home.html">
+                <a class="navbar-brand" href="index.html">
                 <img src="./assets/images/logo-machado-fernandes.png" alt="Logo da Machado & Fernandes Advogados"
                     width="250" class="d-inline-block align-text-top justify-content-start"></a>
             </div>
@@ -101,11 +77,11 @@
                         <div class="offcanvas-body">
                             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                                 <hr class="divider">
-                                <li class="nav-item" data-bs-dismiss="offcanvas"><a class="nav-link" href="#"><i class="bi bi-diagram-3-fill"></i> Áreas de Atuação</a></li>
+                                <li class="nav-item" data-bs-dismiss="offcanvas"><a class="nav-link" href="areas-de-atuacao.html"><i class="bi bi-diagram-3-fill"></i> Áreas de Atuação</a></li>
                                 <hr class="divider">
-                                <li class="nav-item" ><a class="nav-link" aria-current="page" href="#"><i class="bi bi-people-fill"></i> Quem Somos</a></li>
+                                <li class="nav-item" ><a class="nav-link" aria-current="page" href="quem-somos.html"><i class="bi bi-people-fill"></i> Quem Somos</a></li>
                                 <hr class="divider">
-                                <li class="nav-item" data-bs-dismiss="offcanvas"><a class="nav-link" aria-current="page" href="" data-bs-toggle="modal" data-bs-target="#modalContato"><i class="bi bi-share-fill"></i> Contato</a></li>
+                                <li class="nav-item" data-bs-dismiss="offcanvas"><a class="nav-link" aria-current="page" href="contato.html"><i class="bi bi-share-fill"></i> Contato</a></li>
                                 <hr class="divider">
                             </ul>
                             <div class="social">
@@ -171,7 +147,7 @@
                     <p>Acreditamos que o acesso à justiça é fundamental, e trabalhamos incansavelmente para torná-lo uma
                         realidade para todos.</p>
 
-                        <h2>Escritório</h2>
+                    <h2>Escritório</h2>
                     <p>
                         Av. Doutor Francisco Félix Mendonça - 4911 <br>
                         São Paulo - Palmeira D'Oeste - SP <br>
@@ -194,26 +170,24 @@
 
     <!-- FOOTER -->
     <footer class="container-fluid">
-        <div class="row">
-            <div class="col-lg-4 py-3 px-5">
-                <img src="./assets/images/logo-machado-fernandes-footer.png" class="img-fluid"
-                    alt="Logo da Machado & Fernandes Advogados">
-            </div>
-            <div class="col">
-                <ul>
-                    <li><i class="bi bi-geo-alt"></i> <span class="localmaps"></span></li>
-                    <li><i class="bi bi-telephone"></i> (17) 99718-7129 <a class="whatsappAdd">Abrir WhatsApp</a></li>
-                    <li><i class="bi bi-envelope"></i> <a class="mailAdd">contato@machadoefernandes.adv.br</a></li>
-                </ul>
+        <div class="row py-5 px-3 align-items-center">
+            <div class="col-lg-3 text-center"><a href="index.html"><img src="./assets/images/logo-machado-fernandes-footer.png" class="img-fluid"
+                alt="Logo da Machado & Fernandes Advogados"></a></div>
+          <div class="col-lg">
+            <ul>
+                <li><i class="bi bi-geo-alt"></i> <span class="localmaps"></span></li>
+                <li><i class="bi bi-telephone"></i> (17) 99718-7129 > <a class="whatsappAdd">Abrir WhatsApp</a></li>
+                <li><i class="bi bi-envelope"></i> <a class="mailAdd">contato@machadoefernandes.adv.br</a></li>
+            </ul>
+        </div>
+        </div>
+        <div class="row px-3 credits">
+            <div class="col-lg">
+                © <span class="credits-year"></span> Machado & Fernandes Sociedade de Advogados · OAB 14437 · <a href="politicas-de-privacidade.html">
+                    Politicas de Privacidade</a>
             </div>
         </div>
     </footer>
-    <section class="credits px-5">
-        <div>
-            © <span class="credits-year"></span> Machado & Fernandes Sociedade de Advogados · OAB 14437 · <a href="#">
-                Politicas de Privacidade</a>
-        </div>
-    </section>
     <!-- FOOTER -->
 
 
@@ -222,7 +196,7 @@
 
     <!-- CHATT -->
     <div class="chatt desktop-show bg-primary" onclick="openChatt()">
-        Vamos conversar?<i class="bi bi-chat-dots"></i>
+        Vamos conversar?<i class="bi bi-chat-right-text"></i>
     </div>
     <div class="chatt-content text-center">
         <div class="chatt-content-close bg-primary desktop-show"><i class="bi bi-dash-lg" onclick="openChatt()"></i>
@@ -268,40 +242,12 @@
                     <figure>
                         <img src="./assets/images/sobre-leadspace-machado-e-fernandes-advogados.jpg" alt="Foto dos Advogados Jeferson e Leandro" class="img-fluid">
                     </figure>
-                    <p class="text-center">Dr. Leandro Fernandes e Jeferson de Paes Machado</p>
+                    <p class="text-center">Dr. Leandro Fernandes e Dr. Jeferson de Paes Machado</p>
                 </div>
             </div>
         </div>
     </div>
     <!-- MODAL ADVOGADOS -->
-
-    <!-- MODAL CONTATO -->
-    <div class="modal fade" id="modalContato" tabindex="-1" aria-labelledby="modalContatoLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h2 class="modal-title fs-5" id="modalContatoLabel">Contato</h2>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="contact">
-                        <ul>
-                            <li><i class="bi bi-telephone-outbound"></i> Tel.: (17) 99718-7129</li>
-                            <li><i class="bi bi-whatsapp"></i> <a class="whatsappAdd">Abrir WhatsApp</a></li>
-                            <li><i class="bi bi-envelope"></i> <a class="mailAdd">contato@machadoefernandes.adv.br</a>
-                            </li>
-                        </ul>
-                        <h5 class="mt-5">Localização</h5>
-                        <ul>
-                            <li><i class="bi bi-geo-alt"></i> <span class="localmaps"></span></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- MODAL CONTATO -->
-
 
 </body>
 
