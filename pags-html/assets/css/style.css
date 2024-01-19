@@ -479,13 +479,13 @@ footer i{
     }
     .chatt-content i{
         color: var(--color-black-3);
-        font-size: 2rem;
-        height: 40px;
+        font-size: 2.5rem;
+        height: 50px;
         display: grid;
         transition: 0.3s;
     }
     .chatt-content h3{
-        font-size: 0.7rem;
+        font-size: 0.8rem;
     }
     .chatt-content p{
         font-size: 1rem;
