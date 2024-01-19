@@ -121,28 +121,31 @@
         <!-- PAGES -->
 
         <!-- CONTENT PAGE -->
-        <section class="container">
-            <article class="row quem-somos custom-desktop-mt-50">
-                <div class="col mb-3">
+        <section class="container-fluid">
+            <div class="row text-center">
+                <div class="col-lg-12 order-lg-2">
                     <p><i class="bi bi-telephone"></i> (17) 99718-7129</p>
                     <p><i class="bi bi-whatsapp"></i> <a class="whatsappAdd">Abrir WhatsApp</a></p>
                     <p><i class="bi bi-envelope"></i> <a class="mailAdd">contato@machadoefernandes.adv.br</a></p>
                     <p>Funcionamento: <strong>Segunda a Sexta · 9h às 18h</strong></p>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-12 order-lg-1">
                     <iframe loading="lazy"
 					src="https://maps.google.com/maps?q=Av%20Doutor%20Francisco%20F%C3%A9lix%20Mendon%C3%A7a%20-%204911%2C%20Palmeora%20D%27Oeste%20-%20SP&#038;t=m&#038;z=15&#038;output=embed&#038;iwloc=near"
 					title="Av Doutor Francisco Félix Mendonça - 4911, Palmeora D&#039;Oeste - SP"
-					aria-label="Av Doutor Francisco Félix Mendonça - 4911, Palmeora D&#039;Oeste - SP" width="100%" height="300px"
+					aria-label="Av Doutor Francisco Félix Mendonça - 4911, Palmeora D&#039;Oeste - SP" 
+                    width="100%" 
+                    height="500px"
 			></iframe>
-            <p class="mt-3">
+            <p class="mt-3 mb-5">
                 Av. Doutor Francisco Félix Mendonça - 4911 <br>
                 São Paulo - Palmeira D'Oeste - SP <br>
                 CEP 15720-000 - <a href="">Abrir Maps</a>
             </p>
                 </div>
-            </article>
+            </div>
         </section>
+
         <!-- CONTENT PAGE -->
 
     </section>
@@ -157,7 +160,7 @@
           <div class="col-lg">
             <ul>
                 <li><i class="bi bi-geo-alt"></i> <span class="localmaps"></span></li>
-                <li><i class="bi bi-telephone"></i> (17) 99718-7129 > <a class="whatsappAdd">Abrir WhatsApp</a></li>
+                <li><i class="bi bi-telephone"></i> (17) 99718-7129 - <a class="whatsappAdd">Abrir WhatsApp</a></li>
                 <li><i class="bi bi-envelope"></i> <a class="mailAdd">contato@machadoefernandes.adv.br</a></li>
             </ul>
         </div>
@@ -180,23 +183,29 @@
         Vamos conversar?<i class="bi bi-chat-right-text"></i>
     </div>
     <div class="chatt-content text-center">
-        <div class="chatt-content-close bg-primary desktop-show"><i class="bi bi-dash-lg" onclick="openChatt()"></i>
+        <div class="chatt-content-close bg-primary color desktop-show">
+            <i class="bi bi-dash-lg" onclick="openChatt()"></i>
+        </div>
+        <div class="mobile-show">
+            <a href="tel:+5517997187129"><i class="bi bi-telephone-outbound"></i></a>
+            <h3>Ligar</h3>
         </div>
         <div>
-            <i class="bi bi-whatsapp"></i>
-            <h3>Mensagem WhatsApp:</h3>
+            <a class="whatsappAdd"><i class="bi bi-whatsapp"></i></a>
+            <h3>WhatsApp</h3>
             <p class="desktop-show"><a class="whatsappAdd">(17) 99718-7129</a></p>
         </div>
         <div>
-            <i class="bi bi-envelope"></i>
-            <h3>Email:</h3>
+            <a class="mailAdd"><i class="bi bi-envelope"></i></a>
+            <h3>Email</h3>
             <p class="desktop-show"><a class="mailAdd">contato@machadoefernandes.adv.br</a></p>
         </div>
         <div>
-            <h3>Funcionamento:</h3>
+            <p class="mb-0"><strong>Funcionamento:</strong></p>
             <p>Segunda a Sexta · 9h às 18h</p>
-            <p class="mobile-show"><i role="button" class="bi bi-arrow-down text-dark fs-1" onclick="openChatt()"
-                    title="Contato"></i></p>
+            <div class="mobile-show">
+                <i class="bi bi-dash-circle-fill fs-1 text-primary" role="button" onclick="openChatt()"></i>
+            </div>
         </div>
     </div>
     <!-- CHATT -->
@@ -214,21 +223,6 @@
         </ul>
     </nav>
     <!-- NAV MOBILE -->
-
-    <!-- MODAL ADVOGADOS -->
-    <div class="modal fade" id="modalQuemSomosFoto" tabindex="-1" aria-labelledby="modalQuemSomosFotoLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <figure>
-                        <img src="./assets/images/sobre-leadspace-machado-e-fernandes-advogados.jpg" alt="Foto dos Advogados Jeferson e Leandro" class="img-fluid">
-                    </figure>
-                    <p class="text-center">Dr. Leandro Fernandes e Jeferson de Paes Machado</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- MODAL ADVOGADOS -->
 
 </body>
 

@@ -124,9 +124,8 @@
             <article class="row quem-somos custom-desktop-mt-50">
                 <div class="col-lg-5 order-lg-2 text-center">
                     <figure>
-                        <a role="button" data-bs-toggle="modal" data-bs-target="#modalQuemSomosFoto">
                         <img src="./assets/images/sobre-leadspace-machado-e-fernandes-advogados.jpg"
-                            alt="Foto dos Advogados Jeferson e Leandro" class="img-fluid rounded"></a>
+                            alt="Foto dos Advogados Jeferson e Leandro" class="img-fluid rounded">
                             <h3 class="mt-3 fw-normal">Machado & Fernandes Sociedade de Advogados</h3>
                             <p class="fw-bold">OAB - 14437</p>
                     </figure>
@@ -176,7 +175,7 @@
           <div class="col-lg">
             <ul>
                 <li><i class="bi bi-geo-alt"></i> <span class="localmaps"></span></li>
-                <li><i class="bi bi-telephone"></i> (17) 99718-7129 > <a class="whatsappAdd">Abrir WhatsApp</a></li>
+                <li><i class="bi bi-telephone"></i> (17) 99718-7129 - <a class="whatsappAdd">Abrir WhatsApp</a></li>
                 <li><i class="bi bi-envelope"></i> <a class="mailAdd">contato@machadoefernandes.adv.br</a></li>
             </ul>
         </div>
@@ -199,23 +198,29 @@
         Vamos conversar?<i class="bi bi-chat-right-text"></i>
     </div>
     <div class="chatt-content text-center">
-        <div class="chatt-content-close bg-primary desktop-show"><i class="bi bi-dash-lg" onclick="openChatt()"></i>
+        <div class="chatt-content-close bg-primary color desktop-show">
+            <i class="bi bi-dash-lg" onclick="openChatt()"></i>
+        </div>
+        <div class="mobile-show">
+            <a href="tel:+5517997187129"><i class="bi bi-telephone-outbound"></i></a>
+            <h3>Ligar</h3>
         </div>
         <div>
-            <i class="bi bi-whatsapp"></i>
-            <h3>Mensagem WhatsApp:</h3>
+            <a class="whatsappAdd"><i class="bi bi-whatsapp"></i></a>
+            <h3>WhatsApp</h3>
             <p class="desktop-show"><a class="whatsappAdd">(17) 99718-7129</a></p>
         </div>
         <div>
-            <i class="bi bi-envelope"></i>
-            <h3>Email:</h3>
+            <a class="mailAdd"><i class="bi bi-envelope"></i></a>
+            <h3>Email</h3>
             <p class="desktop-show"><a class="mailAdd">contato@machadoefernandes.adv.br</a></p>
         </div>
         <div>
-            <h3>Funcionamento:</h3>
+            <p class="mb-0"><strong>Funcionamento:</strong></p>
             <p>Segunda a Sexta · 9h às 18h</p>
-            <p class="mobile-show"><i role="button" class="bi bi-arrow-down text-dark fs-1" onclick="openChatt()"
-                    title="Contato"></i></p>
+            <div class="mobile-show">
+                <i class="bi bi-dash-circle-fill fs-1 text-primary" role="button" onclick="openChatt()"></i>
+            </div>
         </div>
     </div>
     <!-- CHATT -->
@@ -234,28 +239,13 @@
     </nav>
     <!-- NAV MOBILE -->
 
-    <!-- MODAL ADVOGADOS -->
-    <div class="modal fade" id="modalQuemSomosFoto" tabindex="-1" aria-labelledby="modalQuemSomosFotoLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <figure>
-                        <img src="./assets/images/sobre-leadspace-machado-e-fernandes-advogados.jpg" alt="Foto dos Advogados Jeferson e Leandro" class="img-fluid">
-                    </figure>
-                    <p class="text-center">Dr. Leandro Fernandes e Dr. Jeferson de Paes Machado</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- MODAL ADVOGADOS -->
-
 </body>
 
 </html>
 
 <script>
 
-    // REMOVE TRANSTION WHEN SIDEBAR ACTIVE
+    // REMOVE TRANSTION WHEN SIDEBAR ACTIVE AND MODAL
     document.addEventListener('DOMContentLoaded', function () {
         var navbar = document.querySelector('.navbar');
         var sideNav = new bootstrap.Offcanvas(document.getElementById('navbar')); // Substitua com o ID real do seu side nav
@@ -268,6 +258,7 @@
             navbar.style.transition = '';
         });
     });
+    
     // CLASS ADD NAVBAR FIXED
     document.addEventListener('DOMContentLoaded', function () {
         let navbar = document.getElementById('navbar');
