@@ -60,7 +60,7 @@ integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2
     <nav class="navbar fixed-top" id="navbar">
         <div class="container">
             <div class="mobile-hide my-2">
-                <a class="navbar-brand" href="index.html">
+                <a class="navbar-brand" href="index.html#">
                 <img src="./assets/images/logo-machado-fernandes.png" alt="Logo da Machado & Fernandes Advogados"
                     width="250" class="d-inline-block align-text-top justify-content-start"></a>
             </div>
@@ -91,7 +91,7 @@ integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2
                                 <a href="https://www.instagram.com" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Instagram"><i class="bi bi-instagram"></i></a>
                             </div>
                             <div class="mt-5 text-center d-grid gap-2">
-                                <button type="button" class="btn btn-light text-muted py-3 border mobile-show" data-bs-dismiss="offcanvas" role="button" title="Fechar">(X) Fechar</button>
+                                <button type="button" class="btn border border-secondary py-3 mobile-show" data-bs-dismiss="offcanvas" role="button" title="Fechar">(X) Fechar</button>
                             </div>
                         </div>
                     </div>
@@ -328,7 +328,7 @@ integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2
     <!-- FOOTER -->
     <footer class="container-fluid">
         <div class="row py-5 px-3 align-items-center">
-          <div class="col-lg-3 text-center"><a href="index.html"><img src="./assets/images/logo-machado-fernandes-footer.png" class="img-fluid"
+          <div class="col-lg-3 text-center"><a href="index.html#"><img src="./assets/images/logo-machado-fernandes-footer.png" class="img-fluid"
             alt="Logo da Machado & Fernandes Advogados"></a></div>
           <div class="col-lg">
             <ul>
@@ -400,14 +400,13 @@ integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2
 // TERMS
 
 let lgpdUrl = 'https://jsonplaceholder.typicode.com/posts';
-
 let lgpdHtml = `
 <div class="terms-overlay">
         <div class="terms-overlay-content">
             <h2>Politicas de Privacidade</h2>
             <p>Respeitamos a sua privacidade e queremos garantir que você esteja ciente de como coletamos, usamos e protegemos as informações pessoais fornecidas por você. Ao utilizar nosso site, você concorda com os termos da nossa <a href="politicas-de-privacidade.html">política de privacidade</a>. Suas informações são mantidas seguras e não são compartilhadas com terceiros sem o seu consentimento explícito. Nosso objetivo é fornecer uma experiência online segura e personalizada. </p>
             <p>Se tiver alguma dúvida ou preocupação sobre nossas práticas de privacidade, envie e-mail para <a href="mailto:contato@machadoefernandes.adv.br">contato@machadoefernandes.adv.br</a>.</p>
-            <button type="button" class="btn btn-primary btn-sm">Entendi</button>
+            <button type="button" class="btn btn-success btn-sm">Entendi</button>
         </div>
     </div>
 `;
@@ -436,27 +435,23 @@ if(!lsContent){
     });
 }
 
-
-
-// CLASS ADD NAVBAR FIXED
-document.addEventListener('DOMContentLoaded', function () {
-      let navbar = document.getElementById('navbar');
-      let navbarMobile = document.getElementById('nav-footer-mobile');
-      let lastScrollTop = 0;
-      window.addEventListener('scroll', function () {
-        let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-        if (scrollTop > lastScrollTop) {
-          navbar.classList.add('navbarOff');
-        } else {
-          navbar.classList.remove('navbarOff');
-        }
-        lastScrollTop = scrollTop;
-
-      });
-    });
 // PRELOAD
 window.addEventListener("load",function(){document.querySelector(".preload").style.display="none"});
+
+// NAVBAR FIXED
+    document.addEventListener('DOMContentLoaded', function () {
+        var navbar = document.querySelector('.navbar');
+        var sideNav = new bootstrap.Offcanvas(document.getElementById('navbar'));
+
+        sideNav._element.addEventListener('show.bs.offcanvas', function () {
+            navbar.style.transition = 'none';
+        });
+
+        sideNav._element.addEventListener('hidden.bs.offcanvas', function () {
+            navbar.style.transition = '';
+        });
+    });
+
 // TOOLTIPS
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))

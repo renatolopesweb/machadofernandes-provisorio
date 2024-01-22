@@ -14,7 +14,6 @@
     --color-black-2: #111;
     --color-black-3: #090909;
     --color-primary: #0D6EFD;
-    
 }
 
 
@@ -24,11 +23,14 @@
 
 /* a {color: var(--primary);} */
 
+body{
+    background-color: #FBFBFB;
+}
+
 h1, h2, h3, h4, h5{
     font-family: 'Tiro Telugu', serif;
     letter-spacing: 1px;
 }
-
 .mobile-show{
     display: none!important;
 }
@@ -42,10 +44,6 @@ h1, h2, h3, h4, h5{
     .mobile-show{
         display: block!important;
     }
-}
-
-:root {
-    --white: #ffffff;
 }
 
 /* CLASS */
@@ -87,17 +85,26 @@ div{transition: 0.5s;}
 }
 
 .terms-overlay{
+    align-items: center;
+    animation: termsAnimate 0.5s ease-out 2s forwards;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    left: 0;
+    opacity: 0;
     position: fixed;
     top: 0;
-    left: 0;
+    transition: opacity 0.5s, margin-top 0.5s;
     width: 100%;
-    height: 100%;
-    /* background-color: rgba(0, 0, 0, 0.1); */
-    display: flex;
-    align-items: center;
-    justify-content: center;
     z-index: 999;
 }
+
+@keyframes termsAnimate {
+    to {
+      opacity: 1;
+      margin-top: 0;
+    }
+  }
 .terms-overlay div{
     background-color: #fff;
     bottom: 0;
@@ -108,6 +115,7 @@ div{transition: 0.5s;}
 .terms-overlay div h2{
     font-family: var(--bs-body-font-family)!important;
     font-size: 0.9rem;
+    letter-spacing: 0;
 }
 .terms-overlay div p{
     font-size: 0.7rem;
@@ -123,14 +131,6 @@ div{transition: 0.5s;}
     transition: 0!important;
 }
 
-.navbarOff{
-    margin-top: -200px!important;
-    transition: .5s;
-}
-.navbarMobileOff{
-    margin-bottom: -100px!important;
-    transition: .5s;
-}
 .navbar{
     background-color: var(--color-black-3);
     transition: .5s;
@@ -277,11 +277,11 @@ header{
     position: absolute;
 }
 .home-advogados::before{
-    background-image: linear-gradient(#fff, #e4e4e4);
+    background-image: linear-gradient(#fbfbfb, #e4e4e4);
     top: -100px;
 }
 .home-advogados::after{
-    background-image: linear-gradient(#e4e4e4, #fff);
+    background-image: linear-gradient(#e4e4e4, #fbfbfb);
     bottom: -100px;
 }
 
@@ -320,7 +320,7 @@ header{
     align-content: center;
     display: grid;
     height: 50vh;
-    background-color: #FBFBFB;
+    background-color: #fff;
 }
 .context-advogado-contato .btn{
     border-radius: 100px;
@@ -351,19 +351,14 @@ footer i{
     }
 }
  .credits{
-    /* align-content: center; */
     background-color: var(--color-black-2);
     border-top: 1px solid #ffffff0a;
-    /* color: #ccc;
-    display: grid; */
     font-size: 0.8rem;
-    padding: 15px 0;
-    /* height: 50px; */
-    
+    padding: 15px 0;  
 }
 @media (max-width: 992px){
     .credits{
-        margin-bottom: 70px;
+        margin-bottom: 85px;
         text-align: center;
     }
 }
@@ -674,7 +669,7 @@ footer i{
     font-size: 0.9rem;
 }
 .nav-link, .nav-link:hover, .nav-link:focus, .areas-atuacao i{
-    color: #999;
+    color: rgb(160, 160, 160);
     font-size: 0.9rem;
 }
 .nav-pills li{
