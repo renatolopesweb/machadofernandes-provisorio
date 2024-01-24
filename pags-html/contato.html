@@ -89,8 +89,8 @@
                                 <a href="https://www.facebook.com" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Facebook"><i class="bi bi-facebook"></i></a>
                                 <a href="https://www.instagram.com" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Instagram"><i class="bi bi-instagram"></i></a>
                             </div>
-                            <div class="mt-5 text-center mobile-show">
-                                <button type="button" class="btn btn-outline-dark" data-bs-dismiss="offcanvas" role="button" title="Fechar">X Fechar</button>
+                            <div class="mt-5 text-center d-grid gap-2">
+                                <button type="button" class="btn border border-secondary py-3 mobile-show" data-bs-dismiss="offcanvas" role="button" title="Fechar">(X) Fechar</button>
                             </div>
                         </div>
                     </div>
@@ -175,8 +175,8 @@
         </div>
         <div class="row px-3 credits">
             <div class="col-lg">
-                © <span class="credits-year"></span> Machado & Fernandes Sociedade de Advogados · OAB 14437 · <a href="politicas-de-privacidade.html">
-                    Politicas de Privacidade</a>
+                © <span class="credits-year"></span> Machado & Fernandes Sociedade de Advogados · OAB 14437 · <a href="politica-de-privacidade.html">
+                    Politica de Privacidade</a>
             </div>
         </div>
     </footer>
@@ -187,8 +187,8 @@
 
 
     <!-- CHATT -->
-    <div class="chatt desktop-show bg-primary" onclick="openChatt()">
-        Vamos conversar?<i class="bi bi-chat-right-text"></i>
+    <div class="chatt desktop-show">
+        <button type="button" class="btn btn-primary mt-2 py-2 px-4" onclick="openChatt()">Vamos conversar? <i class="bi bi-chat-right-text"></i></button>
     </div>
     <div class="chatt-content text-center">
         <div class="chatt-content-close bg-primary color desktop-show">
@@ -245,12 +245,11 @@ let lgpdUrl = 'https://jsonplaceholder.typicode.com/posts';
 let lgpdHtml = `
 <div class="terms-overlay">
         <div class="terms-overlay-content">
-            <h2>Politicas de Privacidade</h2>
-            <p>Respeitamos a sua privacidade e queremos garantir que você esteja ciente de como coletamos, usamos e protegemos as informações pessoais fornecidas por você. Ao utilizar nosso site, você concorda com os termos da nossa <a href="politicas-de-privacidade.html">política de privacidade</a>. Suas informações são mantidas seguras e não são compartilhadas com terceiros sem o seu consentimento explícito. Nosso objetivo é fornecer uma experiência online segura e personalizada. </p>
-            <p>Se tiver alguma dúvida ou preocupação sobre nossas práticas de privacidade, envie e-mail para <a href="mailto:contato@machadoefernandes.adv.br">contato@machadoefernandes.adv.br</a>.</p>
-            <button type="button" class="btn btn-primary btn-sm">Entendi</button>
+            <h2>Politica de Privacidade</h2>
+            <p>Ao utilizar nosso site, você concorda com os termos da nossa <a href="politica-de-privacidade.html">política de privacidade</a>. Respeitamos a sua privacidade e queremos garantir que você esteja ciente de como coletamos, usamos e protegemos as informações pessoais fornecidas por você. Suas informações são mantidas seguras e não são compartilhadas com terceiros sem o seu consentimento explícito. Nosso objetivo é fornecer uma experiência online segura e personalizada. </p>
+            <button type="button" class="btn btn-success py-2 px-4 btn-sm">Entendi</button>
         </div>
-    </div>
+</div>
 `;
 
 let lsContent = localStorage.getItem('lgpd');
