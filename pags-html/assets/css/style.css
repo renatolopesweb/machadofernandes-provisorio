@@ -357,7 +357,7 @@ footer i{
         align-content: center;
         display: grid;
         height: 85.2px;
-        margin-bottom: 85px;
+        margin-bottom: 84px;
         padding: 0;
         text-align: center;
     }
@@ -571,7 +571,7 @@ footer i{
     height: 80px;
     margin-top: 80px;
     margin-bottom: 0;
-    /* padding-top: 5px; */
+    padding-top: 3px;
     position: relative;
     text-align: center;
 }
