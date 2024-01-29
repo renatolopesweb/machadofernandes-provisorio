@@ -234,8 +234,7 @@ header{
     }
     .home-lead-space h1{
         font-size: 1.9rem;
-        padding: 0 13px;
-        text-align: center;
+        padding: 0 45px;
     }
     .home-lead-space p{
         font-size: 1rem;
@@ -623,9 +622,6 @@ footer i{
 }
 .nav-pills li{
     margin-right: 30px;
-}
-.areas-atuacao{
-    min-height: 100vh;
 }
 .areas-atuacao i{
     margin-right: 7px;
