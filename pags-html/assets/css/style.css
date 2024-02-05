@@ -574,11 +574,9 @@ footer i{
     align-content: center;
     background-color: #f0f0f0;
     display: grid;
-    font-size: 1.4rem;
-    height: 80px;
+    height: 120px;
     margin-top: 80px;
     margin-bottom: 0;
-    padding-top: 3px;
     position: relative;
     text-align: center;
 }
@@ -599,6 +597,8 @@ footer i{
 }
 @media (max-width: 992px){
     .pages h1{
+        font-size: 1.4rem;
+        height: 80px;
         margin-top: 130px;
     }
     .pages-lead-space img{
@@ -769,10 +769,19 @@ footer i{
 .blog-post-content{
     margin: auto;
 }
-.blog-post-content h3{
+.blog-post-content h1{
+    background-color: transparent;
+    text-align: left;
+    margin-top: 1rem;
+    margin-bottom: 0!important;
+}
+.blog-post-content h2, .blog-post-content h3{
     font-family: var(--bs-body-font-family)!important;
 }
-.blog-post-content h4{
+.blog-post-content h2{
+    margin: 1rem 0;
+}
+.blog-post-content h3{
     margin: 3rem 0 0.8rem 0;
 }
 .blog-last-posts ul{
